@@ -1,36 +1,35 @@
 import React, { useState } from "react"
-import internsData, { newInternsData } from "../internsData"
-import InternsCard from "./InternsCard"
-import "../styles/InternsList.css"
-import FindIntern from "./FindIntern"
-import EmptyCard from "./EmptyCard"
+import data, { newData } from "../data"
+import cardsIntern from "./cardsIntern"
+import "../styles/listedInterns.css"
+import lookupIntern from "./lookupIntern"
+import BlankImage from "./BlankImage"
 
-const InternsList = () => {
-  const [selectedIntern, setSelectedIntern] = useState(null)
+const listedInterns = () => {
+  const [selectIntern, setSelectIntern] = useState(null)
 
   return (
     <div className="displayBlock">
-      {selectedIntern !== "Display" ? (
-        <div className="internsList">
+      {selectIntern !== "Display" ? (
+        <div className="listedInterns">
           <div>
             <h1 className="h1">Interns List</h1>
           </div>
           <div
             className="findIntern"
-            onClick={() => setSelectedIntern("Display")}
+            onClick={() => setSelectIntern("Display")}
           >
             View Interns Scores
           </div>
           <div className="scroll">
-            {newInternsData.map((item) => (
+            {newData.map((item) => (
               <div
                 className="internBlock"
-                onClick={() => setSelectedIntern(item)}
+                onClick={() => setSelectIntern(item)}
                 key={item.id}
               >
-                <img src={item.picture} alt="intern" className="image" />{" "}
                 <div>
-                  {item.name} ({item.track.slice(0, 1).toUpperCase()})
+                  {item.name} ({item.path.slice(0, 1).toUpperCase()})
                 </div>
               </div>
             ))}
@@ -41,16 +40,16 @@ const InternsList = () => {
       )}
 
       <div className="internsDisplay">
-        {selectedIntern && selectedIntern !== "Display" ? (
-          <InternsCard info={selectedIntern} moreInfo={internsData} />
-        ) : selectedIntern && selectedIntern === "Display" ? (
-          <FindIntern info={newInternsData} setDisplay={setSelectedIntern} />
+        {selectIntern && selectIntern !== "Display" ? (
+          <cardsIntern result={selectIntern} moreresult={data} />
+        ) : selectIntern && selectIntern === "Display" ? (
+          <lookupIntern result={newData} setDisplay={setSelectIntern} />
         ) : (
-          <EmptyCard />
+          <BlankImage />
         )}
       </div>
     </div>
   )
 }
 
-export default InternsList
+export default listedInterns

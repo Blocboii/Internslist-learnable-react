@@ -6,78 +6,73 @@ body {
     display: flex;
     margin: 0 10px;
     padding: 10px 0;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.299);
-    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
     background: #1e1e2e;
-    color: #fff;
-  }
+    color: #a69191;
+}
   
-  .h1 {
+.h1 {
     text-align: center;
-    color: #39dad7;
-  }
+    color: #4aa9a7;
+}
   
-  .internsList {
-    width: 25%;
-    border-right: 1px solid rgba(0, 0, 0, 0.568);
+.listedInterns {
+    width: 29%;
+    border-right: 2px solid rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     padding: 10px;
-    /* position: relative; */
-  }
+}
   
-  .scroll {
+.sc {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-  }
+    gap: 10px;
+}
   
-  .internBlock {
+.internBlock {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     margin: 5px 0;
     box-sizing: border-box;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.877);
-    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(148, 91, 91, 0.877);
+    border-bottom: 2px solid black;
     cursor: pointer;
-    transition: 600ms;
+    transition: 400ms;
     display: flex;
     align-items: center;
-    gap: 15px;
-    color: #bdbdbb;
-  }
+    gap: 10px;
+    color: #898962;
+}
   
-  .image {
-    width: 30px;
-    height: 30px;
-  }
   
-  .internBlock:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.299);
-    border-radius: 20px;
+.internBlock:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
     background: #00c2dc98;
     color: black;
-    border-bottom: 1px solid black;
-  }
+    border-bottom: 2px solid black;
+}
   
-  .internsDisplay {
-    width: 75%;
-  }
+.internsDisplay {
+    width: 85%;
+}
   
-  .findIntern {
-    padding: 15px;
-    background: #27293d;
-    margin: 10px 0 20px 0;
-    font-size: 18px;
+.lookupIntern {
+    padding: 10px;
+    background: #6469a3;
+    margin: 10px 0 10px 0;
+    font-size: 15px;
     color: #868686;
     border-radius: 10px;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
     cursor: pointer;
-    transition: 500ms;
+    transition: 400ms;
   }
   
-  .findIntern:hover {
-    color: #cccccc;
+  .lookupIntern:hover {
+    color: #b1b1b1;
     background: #414892;
   }
