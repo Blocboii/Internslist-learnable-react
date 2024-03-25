@@ -1,9 +1,9 @@
 import React, { useState } from "react"
-import internsData, { newInternsData } from "../internsData"
-import InternsCard from "./InternsCard"
+import internsData, { newData } from "./Data"
+import cardsInterns from "./cardsInterns"
 import "../styles/InternsList.css"
-import FindIntern from "./FindIntern"
-import EmptyCard from "./EmptyCard"
+import lookupIntern from "./lookupIntern"
+import BlankImage from "./BlankImage"
 
 const InternsList = () => {
   const [selectedIntern, setSelectedIntern] = useState(null)
