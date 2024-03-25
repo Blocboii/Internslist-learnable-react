@@ -1,0 +1,152 @@
+.cardsIntern {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+  }
+  
+  .card {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    background: #686da4;
+    transition: 400ms;
+  }
+  
+  .card:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    background: #2f377db6;
+  }
+  
+  .card h1 {
+    text-align: center;
+    color: #1d6a68;
+  }
+  
+  .result-area {
+    align-items: center;
+    width: 90%;
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-evenly;
+  }
+
+  .result {
+    width: 50%;
+    padding: 5.5px;
+    column-gap: 2.5px;
+  }
+  
+  .result h3 {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  
+  .activity-area {
+    display: flex;
+    gap: 15px;
+  }
+  .activity {
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    background: #3f4582;
+    transition: 500ms;
+  }
+  
+  .activity:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background: #303ba2b6;
+  }
+
+  .activity h4 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #173433;
+  }
+  
+  .internsGrade {
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    background: #343a75;
+    transition: 300ms;
+    text-align: center;
+    color: #355151;
+  }
+  
+  .internsGrade:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background: #414892;
+  }
+  
+  .internsGrade h1 {
+    text-align: center;
+    color: #aa7a7a;
+    font-size: 130px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .area1 {
+    width: 50%;
+  }
+  
+  .area2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 180px;
+    height: 180px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .out {
+    height: 100px;
+    width: 100px;
+    border-radius: 40%;
+    padding: 10px;
+    display: area;
+    place-items: center;
+  }
+  
+  .in {
+    height: 100px;
+    width: 100px;
+    border-radius: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #num {
+    font-weight: 600px;
+  }
+  
+  svg {
+    position: absolute;
+  }
+  
+  

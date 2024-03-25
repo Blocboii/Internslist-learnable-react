@@ -1,0 +1,88 @@
+.displayInternsList {
+    width: 130%;
+    display: flex;
+    border-bottom: 3px solid black;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 400ms;
+}
+  
+.displayInternsList:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    background: #38444698;
+    color: black;
+}
+
+.displayGrade {
+    display: flex;
+    justify-content: space-evenly;
+    width: 130%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+  
+.internsGrade {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    transition: 2s;
+    width: 20%;
+    color: #000;
+}
+
+.internsGrade:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.299);
+    border-radius: 15px;
+}
+  
+.internsGrade h1 {
+    text-align: center;
+    color: #000;
+    font-size: 130px;
+    margin: 0;
+    padding: 0;
+}
+
+.navig {
+    display: flex;
+    width: 130%;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+  
+.name .path .board {
+    text-align: center;
+    padding: 13px 0;
+    margin: 0;
+    border-right: 2px solid black;
+    width: 20%;
+}
+
+.navigItems {
+    padding: 19px 0;
+}
+  
+  
+.end {
+    border-right: 0;
+}
+  
+.cursor {
+    cursor: pointer;
+}
+
+.high {
+    background-image: linear-gradient(to bottom right, rgb(103, 103, 81) rgb(195, 195, 29));
+}
+
+.mid {
+    background-image: linear-gradient(to bottom right, rgb(119, 106, 141) rgb(81, 56, 151));
+}
+  
+.low {
+    background-image: linear-gradient(to bottom right, rgb(132, 41, 57), rgb(163, 7, 7));
+}
+
